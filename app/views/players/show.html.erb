@@ -1,0 +1,25 @@
+<% provide(:title, @player.name) %>
+<%= render 'layouts/gcs_navbar'%>
+<div class="container">
+<h2>Player Information</h2>
+
+<p>Name: <%= @player.name %> | <%= link_to "edit", edit_player_path(@player) %></p>
+<ul>
+  <li>Creator: <%= link_to @player.user.username, user_path(@player.user) %></li>
+  <li>Player is available for matches: <%= @player.playable %></li>
+  <li>Player is downloadable: <%= @player.downloadable %></li>
+  <li>Description: <%= @player.description %></li>
+  <li>Contest: <%= link_to @player.contest.name, contest_path(@player.contest) %></li>
+</ul>
+
+<h2><%= "Match".pluralize(@player.contest.matches.count) %></h2>
+
+
+
+<ul>
+  <% @player.player_matches.each do |f| %>
+    <li><%= f.result %> - <%= link_to f.match_id, match_path(f.match) %></li>
+  <%end%>
+  <li>Record: <%= @player.player_matches.wins.count %>-<%= @player.player_matches.losses.count %></li>
+</ul>
+</div>

@@ -1,0 +1,13 @@
+<% provide(:title, 'All Matches') %>
+<%= render 'layouts/gcs_navbar'%>
+<div class="container">
+<h1>Matches</h1>
+
+<ul>
+<% @matches.each do |f| %>
+  <% if f.manager_id == @contest.id %>
+    <li><%= link_to f.id, match_path(f) %></li>
+  <% end %>
+<% end %>
+</ul>
+</div>

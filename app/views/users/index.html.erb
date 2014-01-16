@@ -1,0 +1,9 @@
+<% provide(:title, 'All users') %>
+<%= render 'layouts/gcs_navbar'%>
+<div class="container">
+	<h1>List of users</h1>
+	<h3><%= @users.length%> users</h3>
+	<ul>
+ 	 <%= render @users %>
+	</ul>
+</div>

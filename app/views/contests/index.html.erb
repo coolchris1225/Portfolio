@@ -1,0 +1,9 @@
+<% provide(:title, 'All Contests') %>
+<%= render 'layouts/gcs_navbar'%>
+<div class="container">
+<h1>List of contests</h1>
+<h2><%= @contests.length %> contests</h2>
+<ul>
+  <%= render @contests %>
+</ul>
+</div>

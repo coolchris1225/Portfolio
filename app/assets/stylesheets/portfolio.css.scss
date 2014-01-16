@@ -1,0 +1,149 @@
+// Place all the styles related to the portfolio controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "bootstrap";
+@import "font-awesome";
+@import "fancybox";
+
+/*These are custom fonts, normally not avalible on the web */
+@font-face
+{
+font-family: lato-lite;
+src: url('Lato-Lig.ttf'); 
+}
+@font-face
+{
+font-family: lato-reg;
+src: url('Lato-Reg.ttf'); 
+}
+
+.field_with_errors{
+  @extend .has-error;
+  @extend .firm-control;
+}
+/*Background setup*/
+body{
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+html{
+min-height:100%;
+position:relative;
+}
+
+h1{
+color:black;
+font-family:lato-lite;
+}
+
+h3{
+color:black;
+font-family:lato-reg;
+}
+
+p{
+color:black;
+}
+ 
+.facebook-badge{
+display:inline-block;
+padding:9px;
+vertical-align:center;
+}
+ 
+.about-me{
+display:inline-block;
+width:60%;
+vertical-align:middle;
+}
+.footer{
+height: 250px;
+font-size: 20px;
+font-family:lato-lite;
+text-align:left;
+background-attachment: fixed;
+}
+.footer-innertext{
+
+display:inline-block;
+width:75%;
+
+}
+.connect-icons{
+display:inline-block;
+margin-top:75px;
+margin-bottom:75px;
+margin-left:50px;
+margin-right:50px;
+vertical-align:middle;
+
+
+}
+.space-top{
+padding-top:50px;
+}
+
+#footer-right{
+display:block;
+float:right;
+
+
+}
+.paralax-margin{
+
+}
+
+.parrallax-container{
+height:700px;
+padding:200px;
+text-align:center;
+color:white;
+font-family:lato-lite;
+font-size: 72px;
+}
+
+.parallax {
+			background-attachment: fixed;
+			background-position: 50% 0;
+			background-repeat: no-repeat;
+			height: 750px;
+			position: relative;
+			
+			background-size: cover;
+			
+		}
+.board{
+	
+	background-image: url('portfolio-paralax-background.JPG');
+	
+}
+.parallax-text-shadow{
+color:white;
+text-shadow: 2px 2px 2px #000000;
+
+}
+
+.in-album{
+display:none;
+}
+.headerpic{
+width:150px;
+height:150px;
+padding-top:8px;
+padding-right:6px;
+
+
+}
+
+.portfolio_pic{
+width:300px;
+-webkit-filter: drop-shadow(1px 1px 10px black);
+}
+
+.connect-icons-top{
+font-size:19px;
+vertical-align:text-top;
+}

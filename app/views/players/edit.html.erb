@@ -1,0 +1,10 @@
+<% provide(:title, "Edit player") %>
+<%= render 'layouts/gcs_navbar'%>
+<div class="container">
+<h1>Update player</h1>
+
+<%= form_for @player do |f| %>
+  <%= render 'player_form', f: f %>
+  <%= f.submit 'Update Player' %>
+<%end %>
+</div>

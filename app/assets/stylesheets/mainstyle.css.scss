@@ -1,0 +1,14 @@
+@import "bootstrap";
+
+ @font-face
+{
+font-family: bankgothic;
+src: url('bankgthd.ttf')
+    ,url('bankgthd.eot'); 
+}
+
+.field_with_errors{
+  @extend .has-error;
+  @extend .firm-control;
+}
+

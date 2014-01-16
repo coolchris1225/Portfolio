@@ -1,0 +1,9 @@
+<% provide(:title, 'All players') %>
+<%= render 'layouts/gcs_navbar'%>
+<div class="container">
+<h1>List of players</h1>
+<h2><%=@players.length%> players</h2>
+<ul>
+  <%= render @players %>
+</ul>
+</div>
