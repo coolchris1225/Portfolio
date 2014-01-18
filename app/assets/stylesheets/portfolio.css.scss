@@ -49,9 +49,10 @@ color:black;
 }
  
 .facebook-badge{
-display:inline-block;
+display:inline-block; 
 padding:9px;
-vertical-align:center;
+vertical-align:center; 
+
 }
  
 .about-me{
@@ -67,7 +68,6 @@ text-align:left;
 background-attachment: fixed;
 }
 .footer-innertext{
-
 display:inline-block;
 width:75%;
 
@@ -106,20 +106,20 @@ font-size: 72px;
 }
 
 .parallax {
-			background-attachment: fixed;
-			background-position: 50% 0;
-			background-repeat: no-repeat;
-			height: 750px;
-			position: relative;
-			
-			background-size: cover;
-			
+background-attachment: fixed;
+background-position: 50% 0;
+background-repeat: no-repeat;
+height: 750px;
+position: relative;
+background-size: cover;			
 		}
+		
 .board{
 	
 	background-image: url('portfolio-paralax-background.JPG');
 	
 }
+
 .parallax-text-shadow{
 color:white;
 text-shadow: 2px 2px 2px #000000;
@@ -146,4 +146,46 @@ width:300px;
 .connect-icons-top{
 font-size:19px;
 vertical-align:text-top;
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) {
+
+.parallax-text-shadow{
+color:black;
+text-shadow: none;
+}
+
+.board{
+	background-image: url('');
+}
+
+.about-me{
+width:100%;
+}
+
+.headerpic{
+width:140px;
+height:140px;
+padding-top:8px;
+padding-right:6px;
+
+
+}
+.parallax {
+
+height: 100%;
+		
+		}
+.footer{
+height: 100%;
+
+
+}
+.connect-icons{
+display:none;
+
+}
+
 }
