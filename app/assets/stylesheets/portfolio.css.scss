@@ -94,7 +94,8 @@ float:right;
 
 
 }
-.paralax-margin{
+.parallax-margin{
+margin-top:150px;
 }
 
 .parrallax-container{
@@ -146,9 +147,9 @@ font-size:19px;
 vertical-align:text-top;
 }
 
-@media only screen 
+@media all
 and (min-device-width : 320px) 
-and (max-device-width : 568px) {
+and (max-device-width : 768px) {
 
 	.parallax-text-shadow{
 	color:black;
@@ -173,6 +174,47 @@ and (max-device-width : 568px) {
 	.parallax {
 	height: 100%;
 			}
+	.parallax-margin{
+	margin-top:0px;
+	}
+			
+	.footer{
+	height: 100%;
+	}
+	.connect-icons{
+	display:none;
+	}
+
+}
+
+@media all and (max-width : 1199px) {
+
+	.parallax-text-shadow{
+	color:black;
+	text-shadow: none;
+	}
+
+	.board{
+		background-image: url('');
+	}
+
+	.about-me{
+	width:100%;
+	}
+
+	.headerpic{
+	width:140px;
+	height:140px;
+	padding-top:8px;
+	padding-right:6px;
+	}
+	
+	.parallax {
+	height: 100%;
+			}
+	.parallax-margin{
+	margin-top:0px;
+	}
 			
 	.footer{
 	height: 100%;
