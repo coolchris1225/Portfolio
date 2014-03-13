@@ -95,25 +95,25 @@ float:right;
 
 }
 .parallax-margin{
-margin-top:150px;
+padding-top:150px;
 }
 
 .parrallax-container{
-height:700px;
-padding:200px;
 text-align:center;
 color:white;
 font-family:lato-lite;
 font-size: 72px;
 }
 
-.parallax {
-background-attachment: fixed;
-background-position: 50% 0;
+.parallaxify {
+display:block;
+background-position: top 0;
 background-repeat: no-repeat;
 height: 750px;
 position: relative;
-background-size: cover;			
+background-size: cover;		
+top:0px;	
+z-index:-1;
 		}
 		
 .board{
