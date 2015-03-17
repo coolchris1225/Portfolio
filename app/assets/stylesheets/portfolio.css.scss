@@ -52,6 +52,12 @@ color:black;
 .profilepic{
 width:285px;
 }
+
+.logo{
+width:220px;
+left:10%;
+position: relative;
+}
  
 .facebook-badge{
 display:inline-block; 
@@ -198,6 +204,8 @@ and (max-device-width : 768px) {
 	.connect-icons{
 	display:none;
 	}
+	
+	
 
 }
 
@@ -238,3 +246,4 @@ and (max-device-width : 768px) {
 	}
 
 }
+
