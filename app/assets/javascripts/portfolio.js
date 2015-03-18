@@ -1,11 +1,11 @@
 
-
+	
 $(function(){
 			$.stellar({
 				horizontalScrolling: false,
-				verticalOffset: -220
+				verticalOffset: -500
+				
 			});
 		});
 		
-
 

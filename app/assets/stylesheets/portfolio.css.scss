@@ -35,6 +35,12 @@ min-height:100%;
 position:relative;
 }
 
+.logo{
+width:220px;
+left:10%;
+position:relative;
+}
+
 h1{
 color:black;
 font-family:lato-lite;
@@ -53,11 +59,7 @@ color:black;
 width:285px;
 }
 
-.logo{
-width:220px;
-left:10%;
-position: relative;
-}
+
  
 .facebook-badge{
 display:inline-block; 
@@ -183,7 +185,27 @@ and (max-device-width : 768px) {
 	.about-me{
 	width:100%;
 	}
-
+	
+	.logo{
+	width:40%;
+	left:0%;
+	position: absoulute;
+	visibility: hidden;
+	}
+	
+	.logo-mobile{
+	width:40%;
+	left:0%;
+	position: absoulute;
+	visibility: visible;
+	}
+	
+	
+	.profilepic{
+	width:40%;
+	float: right;
+	}
+	
 	.headerpic{
 	width:140px;
 	height:140px;
@@ -220,6 +242,26 @@ and (max-device-width : 768px) {
 		background-image: url('');
 	}
 
+	.logo{
+	width:40%;
+	left:5%;
+	position: fixed;
+	}
+	
+	.logo-mobile{
+	width:40%;
+	left:0%;
+	position: absoulute;
+	visibility: visible;
+	}
+	
+	
+	
+	.profilepic{
+	width:40%;
+	float: right;
+	}
+	
 	.about-me{
 	width:100%;
 	}
