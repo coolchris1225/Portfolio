@@ -38,9 +38,9 @@ position:relative;
 .logo{
 width:220px;
 left:10%;
-position:relative;
-}
+position:absolute;
 
+}
 h1{
 color:black;
 font-family:lato-lite;
@@ -147,6 +147,10 @@ color:white;
 text-shadow: 2px 2px 2px #000000;
 
 }
+.profilepic{
+margin-top:130px;
+}
+
 
 .in-album{
 display:none;
@@ -160,6 +164,7 @@ padding-right:6px;
 }
 
 .portfolio_pic{
+
 width:300px;
 -webkit-filter: drop-shadow(1px 1px 10px black);
 }
@@ -172,6 +177,8 @@ vertical-align:text-top;
 @media all
 and (min-device-width : 320px) 
 and (max-device-width : 768px) {
+
+
 
 	.parallax-text-shadow{
 	color:black;
@@ -190,6 +197,7 @@ and (max-device-width : 768px) {
 	width:40%;
 	left:0%;
 	position: absoulute;
+	margin-top:5%;
 	}
 	
 	.logo-mobile{
@@ -201,6 +209,7 @@ and (max-device-width : 768px) {
 	
 	
 	.profilepic{
+	margin-top:0px;
 	width:40%;
 	float: right;
 	}
@@ -232,6 +241,8 @@ and (max-device-width : 768px) {
 
 @media all and (max-width : 1199px) {
 
+
+
 	.parallax-text-shadow{
 	color:black;
 	text-shadow: none;
@@ -244,19 +255,22 @@ and (max-device-width : 768px) {
 	.logo{
 	width:40%;
 	left:5%;
-	position: fixed;
+	position: absoulute;
+	margin-top:5%;
+	
 	}
 	
 	.logo-mobile{
 	width:40%;
 	left:0%;
 	position: absoulute;
-	visibility: visible;
+	
 	}
 	
 	
 	
 	.profilepic{
+	margin-top:0px;
 	width:40%;
 	float: right;
 	}

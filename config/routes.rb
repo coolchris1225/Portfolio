@@ -1,5 +1,6 @@
 GameContestServer::Application.routes.draw do
   get "portfolio/index"
+  get "schedule/index"
   get "portfolio/about"
   resources :users
   resources :sessions, only:[ :new, :create, :destroy]
@@ -11,6 +12,7 @@ GameContestServer::Application.routes.draw do
   
 
   get 'signup', to: 'users#new', as: 'signup'
+  get 'schedule', to: 'schedule#index', as: 'schedule'
   get 'login', to: 'sessions#new', as: 'login'
   delete 'logout', to: 'sessions#destroy', as: 'logout'
   # The priority is based upon order of creation: first created -> highest priority.
