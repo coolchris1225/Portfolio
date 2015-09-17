@@ -178,7 +178,9 @@ vertical-align:text-top;
 and (min-device-width : 320px) 
 and (max-device-width : 768px) {
 
-
+	body{
+	text-align:center;
+	}
 
 	.parallax-text-shadow{
 	color:black;
@@ -230,6 +232,8 @@ and (max-device-width : 768px) {
 			
 	.footer{
 	height: 100%;
+	padding-top:600px;
+	text-align:center;
 	}
 	.connect-icons{
 	display:none;
@@ -241,7 +245,9 @@ and (max-device-width : 768px) {
 
 @media all and (max-width : 1199px) {
 
-
+	body{
+	text-align:center;
+	}
 
 	.parallax-text-shadow{
 	color:black;
@@ -295,6 +301,8 @@ and (max-device-width : 768px) {
 			
 	.footer{
 	height: 100%;
+	padding-top:600px;
+	text-align:center;
 	}
 	.connect-icons{
 	display:none;
